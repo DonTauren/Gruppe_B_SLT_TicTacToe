@@ -1,4 +1,4 @@
-package java.org.example;
+package org.example;
 
 public class Player {
     private char marker;
