@@ -73,8 +73,13 @@ public class TicTacToe {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        TicTacToe game = new TicTacToe();
-        game.start(sc);
+        boolean playAgain;
+        do {
+            TicTacToe game = new TicTacToe();
+            game.start(sc);
+            System.out.print("Do you want to play again? (yes/no): ");
+            playAgain = sc.next().equalsIgnoreCase("yes");
+        } while (playAgain);
         sc.close();
     }
 }
